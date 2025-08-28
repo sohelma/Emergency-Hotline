@@ -28,11 +28,12 @@
                 <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="">
             </button>
             <button class="bg-[#41ff6b1a] w-[80px] h-[40px] rounded-3xl flex items-center mx-auto gap-3">
-                <p class="ml-3 font-bold">100</p>
+                
+                <span id="coin-count"class="ml-3 font-bold">100</span>
                 <img class="w-[30px] h-[30px]" src="./assets/coin.png" alt="">
             </button>
             <button class=" text-white bg-[#29A74A] w-[90px] h-[40px] rounded-3xl flex items-center mx-auto ">  
-                 <p class="ml-3 font-bold">24</p>
+                 <p class="ml-3 font-bold">0</p>
                  <p class="ml-1 font-bold">Copy</p>
             </button>
         </div>
@@ -57,8 +58,8 @@
                 <button class="bg-gray-200 w-[35px] h-[25px] rounded-lg">All</button>
                 <div class="flex gap-2 mt-4">
                     <button class="border-2 border-gray-300 w-[115px] h-[40px] rounded-lg"><i class="fa-regular fa-paste"></i> Copy</button>
-                    <button class="text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
-                </div>
+                    <button class="call-btn text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg" data-name="National Emergency Number"data-number="999"><i class="fa-solid fa-phone"></i> Call</button>
+                </div> 
             </div>
             <div class="card w-[290px] h-[290px] bg-white p-6 rounded-lg drop-shadow-lg">
                 <div class="flex justify-between items-center">
@@ -71,7 +72,7 @@
                 <button class="bg-gray-200 w-[55px] h-[25px] rounded-lg">Police</button>
                 <div class="flex gap-2 mt-4">
                     <button class="border-2 border-gray-300 w-[115px] h-[40px] rounded-lg"><i class="fa-regular fa-paste"></i> Copy</button>
-                    <button class="text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="call-btn text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="card w-[290px] h-[290px] bg-white p-6 rounded-lg drop-shadow-lg">
@@ -85,7 +86,7 @@
                 <button class="bg-gray-200 w-[45px] h-[25px] rounded-lg">Fire</button>
                 <div class="flex gap-2 mt-4">
                     <button class="border-2 border-gray-300 w-[115px] h-[40px] rounded-lg"><i class="fa-regular fa-paste"></i> Copy</button>
-                    <button class="text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="call-btn text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="card w-[290px] h-[290px] bg-white p-6 rounded-lg drop-shadow-lg">
@@ -99,7 +100,7 @@
                 <button class="bg-gray-200 w-[55px] h-[25px] rounded-lg">Health</button>
                 <div class="flex gap-2 mt-4">
                     <button class="border-2 border-gray-300 w-[115px] h-[40px] rounded-lg"><i class="fa-regular fa-paste"></i> Copy</button>
-                    <button class="text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="call-btn text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="card w-[290px] h-[290px] bg-white p-6 rounded-lg drop-shadow-lg">
@@ -113,7 +114,7 @@
                 <button class="bg-gray-200 w-[45px] h-[25px] rounded-lg">Help</button>
                 <div class="flex gap-2 mt-4">
                     <button class="border-2 border-gray-300 w-[115px] h-[40px] rounded-lg"><i class="fa-regular fa-paste"></i> Copy</button>
-                    <button class="text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="call-btn text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="card w-[290px] h-[290px] bg-white p-6 rounded-lg drop-shadow-lg">
@@ -127,7 +128,7 @@
                 <button class="bg-gray-200 w-[45px] h-[25px] rounded-lg">Govt.</button>
                 <div class="flex gap-2 mt-4">
                     <button class="border-2 border-gray-300 w-[115px] h-[40px] rounded-lg"><i class="fa-regular fa-paste"></i> Copy</button>
-                    <button class="text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button  class="call-btn text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="card w-[290px] h-[290px] bg-white p-6 rounded-lg drop-shadow-lg">
@@ -141,7 +142,7 @@
                 <button class="bg-gray-200 w-[85px] h-[25px] rounded-lg">Electricity</button>
                 <div class="flex gap-2 mt-4">
                     <button class="border-2 border-gray-300 w-[115px] h-[40px] rounded-lg"><i class="fa-regular fa-paste"></i> Copy</button>
-                    <button class="text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="call-btn text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="card w-[290px] h-[290px] bg-white p-6 rounded-lg drop-shadow-lg">
@@ -155,7 +156,7 @@
                 <button class="bg-gray-200 w-[40px] h-[25px] rounded-lg">NGO</button>
                 <div class="flex gap-2 mt-3">
                     <button class="border-2 border-gray-300 w-[115px] h-[40px] rounded-lg"><i class="fa-regular fa-paste"></i> Copy</button>
-                    <button class="text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="call-btn text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="card w-[290px] h-[290px] bg-white p-6 rounded-lg drop-shadow-lg ">
@@ -169,16 +170,20 @@
                 <button class="bg-gray-200 w-[55px] h-[25px] rounded-lg">Travel</button>
                 <div class="flex gap-2 mt-4">
                     <button class="border-2 border-gray-300 w-[115px] h-[40px] rounded-lg"><i class="fa-regular fa-paste"></i> Copy</button>
-                    <button class="text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="call-btn text-white bg-[#29A74A] w-[115px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
            
-
         </div>
-         <div class="right-card flex justify-around items-center w-full xl:w-[30%] h-full bg-white drop-shadow-lg rounded-lg mx-5">
-            <h1 class="font-bold"><i class="fa-regular fa-clock"></i> Call History</h1>
-            <button class=" text-white bg-[#29A74A] w-[90px] h-[40px] 
-            rounded-3xl font-bold "> Clear</button>
+
+        <div id="call-history" class="right-card w-full xl:w-[30%] h-[920px] bg-white 
+                 drop-shadow-lg rounded-lg mx-5 border-2 border red-400">
+             <div class=" flex justify-around items-center ">
+                <h1 class="font-bold"><i class="fa-regular fa-clock"></i> Call History</h1>
+                <button class=" text-white bg-[#29A74A] w-[90px] h-full
+                 rounded-3xl font-bold "> Clear</button>
+            </div> 
+            <ul id="history-list" class=" mt-3 "></ul>
         </div>
       </section>
 

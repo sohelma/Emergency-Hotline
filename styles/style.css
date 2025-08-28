@@ -5,3 +5,11 @@
   font-family: "Hind Madurai", sans-serif;
   font-style: normal;
 }
+
+#history-list li {
+    padding: 15px 5px;
+    margin: 10px 11px;
+    border-radius: 6px;
+    background-color: rgb(250, 248, 248);
+}
+
