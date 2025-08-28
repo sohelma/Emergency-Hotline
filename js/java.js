@@ -28,16 +28,17 @@ for (let i = 0; i < callButtons.length; i++) {
         const name = this.getAttribute("data-name");
         const number = this.getAttribute("data-number");
 
-        alert(`${name}, ${number}`);
+        alert(`📞 Calling ${name}, ${number}`);
 
-        coin -= 20;
+        coin=coin-20;
         coinCountEl.textContent = coin;
 
         const now = new Date();
         const time = now.toLocaleTimeString();
 
         const li = document.createElement("li");
-        li.textContent = `${name}, ${number} at ${time}`;
+        li.textContent = `${name}, ${number} ${time}`;
         historyList.appendChild(li);
     });
 }
+
