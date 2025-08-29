@@ -36,7 +36,7 @@ for (let i = 0; i < callButtons.length; i++) {
         const now = new Date();
         const time = now.toLocaleTimeString();
 
-     // -------- -------- li design------------- ----
+     // -------- -------- li-design------------- ----
         const li = document.createElement("li");
         li.className = "bg-gray-100 p-4 m-2 rounded-md";
         li.innerHTML = `
@@ -70,13 +70,13 @@ const copyButtons = document.getElementsByClassName("copy-btn");
 
 for (let i = 0; i < copyButtons.length; i++) {
     copyButtons[i].addEventListener("click", function() {
-        // find the hotline number inside the same card
+        // find the number inside the same card
         const number = this.parentElement.parentElement.querySelector("h1:nth-of-type(2)").textContent;
 
-        // copy to clipboard
+        // copy 
         navigator.clipboard.writeText(number).then(() => {
             copyCount++;
-            copyCountEl.textContent = `${copyCount} Copy`; // update navbar
+            copyCountEl.textContent = `${copyCount} Copy`; 
             alert(`Number copied ${number}`);
         }).catch(() => {
             alert("❌ Failed to copy number.");
