@@ -22,7 +22,7 @@ for (let i = 0; i < callButtons.length; i++) {
         let coin = parseInt(coinCountEl.textContent);
 
         if (coin < 20) {
-            alert("You have not enough coin,needed atleast 20 coin ");
+            alert("❌ You have not enough coin,needed atleast 20 coin ");
             return;
         }
         const name = this.getAttribute("data-name");
@@ -42,3 +42,33 @@ for (let i = 0; i < callButtons.length; i++) {
     });
 }
 
+//-------------clear-btn---------------
+const clearBtn = document.getElementById("clear-btn");
+
+clearBtn.addEventListener("click", () => {
+    historyList.innerHTML = "";
+});
+
+//--------copy button------------------
+
+const copyCountEl = document.getElementById("copy-count");
+let copyCount = 0;
+
+// select all copy buttons with class .copy-btn
+const copyButtons = document.getElementsByClassName("copy-btn");
+
+for (let i = 0; i < copyButtons.length; i++) {
+    copyButtons[i].addEventListener("click", function() {
+        // find the hotline number inside the same card
+        const number = this.parentElement.parentElement.querySelector("h1:nth-of-type(2)").textContent;
+
+        // copy to clipboard
+        navigator.clipboard.writeText(number).then(() => {
+            copyCount++;
+            copyCountEl.textContent = `${copyCount} Copy`; // update navbar
+            alert(`Number copied ${number}`);
+        }).catch(() => {
+            alert("❌ Failed to copy number.");
+        });
+    });
+}
