@@ -48,7 +48,7 @@ document.body.addEventListener("click", () => {
 
 4. What is Event Delegation in JavaScript? Why is it useful?
 A process in java script where we can add single event listener to their parent element instead of individual listener add. Here event bubbling can use.
- 
+
 Use full as no need add multiple listener except one, easy and clean.
 
 
