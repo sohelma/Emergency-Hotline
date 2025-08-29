@@ -36,11 +36,22 @@ for (let i = 0; i < callButtons.length; i++) {
         const now = new Date();
         const time = now.toLocaleTimeString();
 
+     // -------- -------- li design------------- ----
         const li = document.createElement("li");
-        li.textContent = `${name}, ${number} ${time}`;
+        li.className = "bg-gray-100 p-4 m-2 rounded-md";
+        li.innerHTML = `
+          <div class="flex justify-between items-center gap-3">
+             <div>
+                <span class=" text-[18px] font-semibold text-gray-800">${name}</span>
+                <div class="text-md text-gray-700 mt-1">${number}</div>
+             </div>
+                <span class="text-md text-gray-800">${time}</span>
+            </div>
+        `;
         historyList.appendChild(li);
     });
 }
+
 
 //-------------clear-btn---------------
 const clearBtn = document.getElementById("clear-btn");
